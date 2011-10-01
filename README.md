@@ -34,10 +34,10 @@ For the correct metadata to be displayed your MP3s will need a valid 'TLEN' (tra
 Setting up Javascript jukebox
 -----------------------------
 
-1  Load Javascript jukebox in your browser
-2  Select audio directory
-3  Set optional functions - leave boxes empty to disable
-4  Load audio
+ 1 Load Javascript jukebox in your browser
+ 2 Select audio directory
+ 3 Set optional functions - leave boxes empty to disable
+ 4 Load audio
 
 
 Known issues

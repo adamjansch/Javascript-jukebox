@@ -1,0 +1,20 @@
+# Scripts #
+###########
+scripts/*
+!scripts/jukebox.js
+swf/*
+!swf/README.md
+
+
+# Audio #
+#########
+*.mp3
+!break-5.mp3
+
+
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db

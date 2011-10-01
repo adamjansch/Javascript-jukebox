@@ -1,0 +1,374 @@
+body {
+	font-family: Arial, sans-serif;
+	
+	margin-right: auto;
+	margin-left: auto;
+	
+	overflow: hidden;
+}
+
+section {
+	display: block;
+}
+
+article {
+	display: block;
+}
+
+#left-pane {
+	height: 100%;
+	width: 50%;
+	
+	border-right-color: #7d7d7d;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+div#song-list-titlebar {
+	background-image: url(../images/blue-stripe.png);
+	position: relative;
+	z-index: 1;
+	height: 30px;
+	padding: 12px;
+}
+
+div#song-list {
+	position: relative;
+	z-index: 1;
+	overflow: auto;
+}
+
+div#jukebox-timer, div#jukebox-breaks, div#jukebox-random-play {
+	position: relative;
+	margin-left: 24px;
+	margin-right: 24px;
+	margin-top: 24px;
+	border-bottom-color: #7d7d7d;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+div#jukebox-timer p, div#jukebox-breaks p, div#jukebox-random-play p {
+	padding-bottom: 24px;
+}
+
+div#jukebox-timer input, div#jukebox-breaks input {
+	width: 120px;
+	font-size: 12px;
+}
+
+.calendricalTimePopup {
+	font-size: 12px;
+}
+
+div#song-loader {
+	padding: 24px;
+	overflow: auto;
+}
+
+div#song-loader p {
+	margin-bottom: 8px;
+}
+
+div#song-loading {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+div#song-loading p {
+	padding-top: 24px;
+	border-bottom-color: #b8b8b8;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	padding-bottom: 24px;
+}
+
+div#song-list article {
+	font-size: 24px;
+	border-bottom-color: #7c7c7c;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	
+	float: left;
+	width: 95%;
+	padding: 12px;
+	margin: 0px;
+	
+	position: relative;
+	
+	z-index: -1;
+}
+
+div#song-list article p {
+	padding: 0px;
+	margin: 0px;
+}
+
+div#song-list article .artwork {
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 12px;
+	margin-top: 0px;
+	float: left;
+	padding: 0px;
+	position: relative;
+	z-index: -1;
+}
+
+div#song-list article div.song-text {
+}
+
+p.album, .artist {
+	color: #959595;
+}
+
+p.duration {
+	font-size: 85%;
+}
+
+div#song-list article div.song-text .add-link {
+	right: 12px;
+	bottom: 12px;
+	
+	position: absolute;
+	
+	padding-top: 6px;
+	padding-left: 18px;
+	padding-bottom: 3px;
+	padding-right: 18px;
+	
+	font-weight: bold;
+	font-family: "Courier New", Courier, Monaco, monospace;
+	font-size: 26px;
+	
+	background-color: #ffaf00;
+	cursor: pointer;
+}
+
+div#song-list article div.song-text .non-add-link {
+	color: #666666;
+	right: 12px;
+	bottom: 12px;
+	
+	position: absolute;
+	
+	padding-top: 6px;
+	padding-left: 18px;
+	padding-bottom: 3px;
+	padding-right: 18px;
+	
+	font-weight: bold;
+	font-family: "Courier New", Courier, Monaco, monospace;
+	font-size: 26px;
+	
+	background-color: #cccccc;
+	cursor: default;
+}
+
+#right-pane {
+	width: 50%;
+	height: 100%;
+	
+	float: right;
+}
+
+div#current-song {
+	font-weight: bold;
+	font-family: "Courier New", Courier, Monaco, monospace;
+}
+
+div#current-song-titlebar {
+	margin-left: 1px;
+	text-align: right;
+	background-image: url(../images/green-stripe.png);
+	padding: 12px;
+}
+
+div#current-song-details {
+	padding-left: 40px;
+	padding-bottom: 32px;
+	padding-right: 40px;
+	padding-top: 32px;
+	font-size: 30px;
+	text-align: center;
+}
+
+div#current-song-details div#current-song-text {
+	margin-top: -120px;
+}
+
+div#current-song-details div#current-song-text p {
+	text-align: right;
+}
+
+div#current-song-details p .label {
+	padding-right: 6px;
+	padding-left: 6px;
+	display: inline;
+	font-size: 24px;
+	color: white;
+	background-color: black;
+}
+
+div#current-song-details p img#wink {
+	margin-bottom: 12px;
+}
+
+div#current-queue {
+	margin-left: 1px;
+	
+	border-top-color: #333333;
+	border-top-style: dotted;
+	border-top-width: 1px;
+}
+
+div#current-queue-titlebar {
+	text-align: right;
+	background-image: url(../images/red-stripe.png);
+	padding: 12px;
+}
+
+div#current-queue-list {
+	overflow: hidden;
+}
+
+div#current-queue-list article {	
+	font-size: 24px;	
+	min-height: 48px;	
+	padding: 12px;	
+	border-bottom-color: #7d7d7d;	
+	border-bottom-style: dashed;	
+	border-bottom-width: 1px;	
+	position: relative;
+}
+
+
+div#current-queue-list article p.queue-number {
+	margin-top: -10px;
+	margin-right: 16px;
+	float: left;
+	color: #c9c9c9;
+	font-size: 64px;
+}
+
+div#current-queue-list article p.remove-link {
+	right: 12px;
+	bottom: 12px;
+	
+	position: absolute;
+	
+	padding-top: 4px;
+	padding-left: 12px;
+	padding-bottom: 3px;
+	padding-right: 12px;
+	
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Courier New", Courier, Monaco, monospace;
+	
+	background-color: #ff00c7;
+	cursor: pointer;
+}
+
+#song-queue {
+	color: #7f7f7f;
+	
+	font-size: 12px;
+	font-family: Monaco;
+
+	border-color: #7d7d7d;
+	border-style: dashed;
+	border-width: 1px;
+	
+	left: 20px;
+	bottom: 20px;
+	
+	display: block;
+	position: fixed;
+	
+	width: 300px;
+	height: 200px;
+	
+	overflow: auto;
+}
+
+#song-queue p {
+	padding: 4px;
+}
+
+#soundmanager-debug {
+	visibility: hidden;
+	background-color: white;
+	color: #565656;
+	
+	font-family: Monaco;
+	
+	right: 20px;
+	bottom: 20px;
+	
+	position: fixed;
+	
+	border-color: #7d7d7d;
+	border-style: dashed;
+	border-width: 1px;
+	
+	display: block;
+	
+	height: 200px;
+	width: 400px;
+	
+	overflow: auto;
+}
+
+#soundmanager-debug div {
+	font-size: x-small;
+	
+	padding: 0.2em;
+	margin: 0px;
+}
+
+.label-style {
+	font-weight: bold;
+	font-size: 24px;
+	font-family: "Courier New", Courier, Monaco, monospace;
+	padding-top: 2px;
+	padding-left: 12px;
+	padding-bottom: 2px;
+	padding-right: 12px;
+	color: white;
+	background-color: black;
+}
+.sm2-alt {
+	color: black;
+	background-color: #d2d3ff;
+}
+
+.sl-alt {
+}
+
+.load-error {
+	color: red;
+}
+
+#sb-container {
+	text-align: center;
+	font-size: 32px;
+	font-family: "Courier New", Courier, Monaco, monospace;
+	color: white;
+}
+
+#sb-deactivated-msg {
+	padding: 32px;
+	margin-top: 120px;
+}
+
+#countdown {
+	padding-top: 8px;
+	font-size: 42px;
+	font-weight: bold;
+}
+
+#sb-nav-close {
+	visibility: hidden;
+}
+

@@ -1,0 +1,1 @@
+In this directory place the SWF files for SoundManager2.

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<title>Jukebox, by Adam Jansch</title>
+		
+		<link rel="stylesheet" type="text/css" href="scripts/jquery-calendrical/calendrical.css" />
+		<link rel="stylesheet" type="text/css" href="scripts/shadowbox-3.0.3/shadowbox.css">
+		<link rel="stylesheet" type="text/css" href="styles/css-init.css" />
+		<link rel="stylesheet" type="text/css" href="styles/jukebox.css" />
+		
+		<script type="text/javascript" src="scripts/jukebox.js"></script>
+		<script type="text/javascript" src="scripts/soundmanager/soundmanager2.js"></script>
+		<script type="text/javascript" src="scripts/aadsm/id3-minimized.js"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery_15.js"></script>
+		<script type="text/javascript" src="scripts/jquery-calendrical/jquery.calendrical.js"></script>
+		<script type="text/javascript" src="scripts/shadowbox-3.0.3/shadowbox.js"></script>
+		
+		<script type="text/javascript">
+			// Set SoundManager2 parameter setting
+			soundManager.url = 'swf/';
+			soundManager.flashVersion = 9;			// Use Flash version 9 (for MPEG4 support)
+			soundManager.useFlashBlock = false; 	// optionally, enable when you're ready to dive in
+			soundManager.useHTML5Audio = false;
+			soundManager.debugMode = false;			// Switch off debugging
+			
+			// Set resize function with window size changes
+			window.onresize = function() { viewportResize(); };
+			
+			Shadowbox.init({
+			    skipSetup: true
+			});
+		</script>
+	</head>
+	<body>		
+		<section id="right-pane">
+			<div id="current-song">
+				<div id="current-song-titlebar">
+					<span class="label-style">Current song</span>
+				</div>
+				
+				<div id="current-song-details">
+					<p><img src="images/wink.png" alt="winking face" id="current-song-artwork" /></p>
+					
+					<p>Add a song from the<br /> song list to play</p>
+				</div>
+			</div>
+			
+			<div id="current-queue">
+				<div id="current-queue-titlebar">
+					<span class="label-style">Up next...</span>
+				</div>
+				
+				<div id="current-queue-list">
+					
+				</div>
+			</div>	
+		</section>
+		
+		<section id="left-pane">
+			<div id="song-list-titlebar">
+				<span class="label-style">Song list</span>
+			</div>
+			
+			<div id="song-list">
+				<div id="jukebox-timer">
+					<p>Set jukebox activation time</p>
+					
+					<p>Time start/end:
+						<input type="text" id="time_start" onblur="setStartTime()" />
+						<input type="text" id="time_end" onblur="setEndTime()" />
+					</p>
+					
+					<script type="text/javascript"> 
+                        $(function() { $('#time_start, #time_end').calendricalTimeRange(); });
+                    </script>
+				</div>
+				
+				<div id="jukebox-breaks">
+					<p>Set jukebox break regularity</p>
+					
+					<p>Include a break every <input type="text" id="break-period" onblur="setBreakRegularity()" /> minutes</p>
+				</div>
+				
+				<div id="jukebox-random-play">
+					<p>Set jukebox random play duration</p>
+					
+					<p>Play a random song after <input type="text" id="random-song-time" onblur="setRandomSongTime()" /> minutes of inactivity</p>
+				</div>
+				
+				<div id="song-loader">
+					<p>Select local audio files folder</p>
+				
+					<input id="file-selector" type="file" multiple />
+					
+					<script type="text/javascript">
+						document.getElementById("file-selector").addEventListener('change', loadFileList, false);
+					</script>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

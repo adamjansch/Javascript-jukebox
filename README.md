@@ -1,7 +1,7 @@
 Javascript jukebox
 ==================
 
-**Javascript jukebox** is a mouse-driven, browser-based music player designed using HTML5 and Javascript. It was created specifically for Adam Jansch's sound art performance *[Human jukebox x n](http://adamjansch.co.uk/works/human-jukebox-x-n/)*, and features functionality more associated with classic hardware jukeboxes. To see Javascript jukebox in action take a look at the [Human jukebox x n premiere video](http://www.vimeo.com/24568191).
+**Javascript jukebox** is a mouse-driven, browser-based music player designed using HTML5 and Javascript. It was created specifically for Adam Jansch's sound art performance *[Human jukebox x n](http://adamjansch.co.uk/works/human-jukebox-x-n/)*, and features functionality more associated with classic hardware jukeboxes. To see Javascript jukebox in action take a look at the <a href="http://www.vimeo.com/24568191" title="Human jukebox x n premiere video" target="_blank">Human jukebox x n premiere video</a>.
 
 Here is a summary of the functionality of the Javascript jukebox:
 

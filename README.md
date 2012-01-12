@@ -17,11 +17,11 @@ Installation
 
 Javascript jukebox is designed for local browser use, so its files can be installed on your local web server. It has been tested on Chrome and Firefox, and relies on a number of third party Javascript libraries. These should be downloaded and installed into the `scripts` folder in the following structure:
 
-* [aadsm](https://github.com/aadsm/JavaScript-ID3-Reader) - install `id3-minimized.js` into `scripts`
-* [jquery](http://jquery.com/) - install JQuery file into `scripts`, update relevant `<script>` tag in `index.html` to JQuery file name
-* [jquery-calendrical](http://plugins.jquery.com/project/calendrical) - install contents into `scripts`
-* [shadowbox-3.0.3](http://www.shadowbox-js.com/) - download version 3.0.3,  install contents into `scripts`
-* [soundmanager](https://github.com/scottschiller/SoundManager2) - install `soundmanager2.js` into `scripts`, and contents of `swf` folder into `swf`
+* <a href="https://github.com/aadsm/JavaScript-ID3-Reader" title="aadsm Javascript ID3 Reader" target="_blank">aadsm</a> - install `id3-minimized.js` into `scripts`
+* <a href="http://jquery.com/" title="jquery" target="_blank">jquery</a> - install JQuery file into `scripts`, update relevant `<script>` tag in `index.html` to JQuery file name
+* <a href="http://plugins.jquery.com/project/calendrical" title="jquery-calendrical" target="_blank">jquery-calendrical</a> - install contents into `scripts`
+* <a href="http://www.shadowbox-js.com/" title="shadowbox 3.0.3" target="_blank">shadowbox-3.0.3</a> - download version 3.0.3,  install contents into `scripts`
+* <a href="https://github.com/scottschiller/SoundManager2" title="soundmanager 2" target="_blank">soundmanager</a> - install `soundmanager2.js` into `scripts`, and contents of `swf` folder into `swf`
 
 
 Other preparation
@@ -29,7 +29,7 @@ Other preparation
 
 Javascript jukebox was tested with MP3 audio files. Any tunes you would like to have loaded should be copied into a folder named 'audio', located in the main directory of Javascript jukebox.
 
-For the correct metadata to be displayed your MP3s will need a valid 'TLEN' (track length) tag (iTunes doesn't add a TLEN tag to its MP3s, and other applications do not put a valid value in the tag). To add or edit MP3 tags I would recommend [Kid3 for Mac OS X](http://kid3.sourceforge.net/). TLEN is measured in milliseconds.
+For the correct metadata to be displayed your MP3s will need a valid 'TLEN' (track length) tag (iTunes doesn't add a TLEN tag to its MP3s, and other applications do not put a valid value in the tag). To add or edit MP3 tags I would recommend <a href="http://kid3.sourceforge.net/" title="Kid3" target="_blank">Kid3 for Mac OS X</a>. TLEN is measured in milliseconds.
 
 
 Setting up Javascript jukebox

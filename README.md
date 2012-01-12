@@ -10,6 +10,7 @@ Here is a summary of the functionality of the Javascript jukebox:
 * Random song selection: if no tracks have been programmed for a specified period a lesser-played track will be selected automatically and added to the playlist. This functionality is optional, and the period definable.
 * Selectable activation: the jukebox can optionally be set to activate and deactivate at specified times.
 
+<div id="intro-end"></div>
 
 Installation
 ------------
